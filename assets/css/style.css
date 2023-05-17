@@ -1,0 +1,45 @@
+:root {
+  background-color: darkcyan;
+  display: flex;
+  flex: auto;
+}
+
+#container {
+  display: flex;
+  flex: auto;
+}
+
+#citySearchbox {
+  display: flex;
+  max-width: 20%;
+  flex: auto;
+}
+
+#citySearchTitle {
+    display: flex;
+    min-width: 100%;
+    flex: auto;
+  }
+
+#todaysForecast {
+  display: flex;
+  max-width: 80%;
+  flex: auto;
+}
+
+#fiveday {
+  display: flex;
+  max-width: 80%;
+  flex: auto;
+}
+
+#history {
+  display: flex;
+  flex: auto;
+}
+
+#input {
+    display: flex;
+    flex: auto;
+  }
+  
