@@ -11,25 +11,21 @@
 
 #citySearchbox {
   display: flex;
-  max-width: 20%;
   flex: auto;
 }
 
 #citySearchTitle {
     display: flex;
-    min-width: 100%;
     flex: auto;
   }
 
 #todaysForecast {
   display: flex;
-  max-width: 80%;
   flex: auto;
 }
 
 #fiveday {
   display: flex;
-  max-width: 80%;
   flex: auto;
 }
 
