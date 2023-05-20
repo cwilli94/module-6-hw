@@ -1,49 +1,12 @@
-// const fiveDay = document.getElementsById('fiveday');
-// const searchBtn = document.getElementById('searchBtn');
-// const cityName = document.getElementById('input');
-// const todaysForecast = document.getElementById('todaysForecast');
-// const history = document.getElementById('history');
-
-// //get lat and lon
-// async function getCoords(cityName, stateCode, countryCode, limit) {
-//     let apiKey = '8269b9eae5d821ab324b7e685d141133';
-//     let requestUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&limit=${limit}&appid=${apiKey}`;
-  
-//     try {
-//       const response = await fetch(requestUrl);
-//       const data = await response.json();
-  
-//       if (data.length > 0) {
-//         const { lat, lon } = data[0];
-//         return { lat, lon };
-//       } else {
-//         throw new Error('No coordinates found for the specified location.');
-//       }
-//     } catch (error) {
-//       console.error('Error:', error);
-//       throw error;
-//     }
-//   }
-  
-  
-
-// //get weather
-// function getWeather(latitude, longitude) {
-//     let apiKey = '8269b9eae5d821ab324b7e685d141133';
-//     let latitude = lat;
-//     let longitude = lon;
-//     let requestUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-  
-//   }
 const fiveDay = document.getElementById('fiveday');
 const searchBtn = document.getElementById('searchBtn');
 const cityName = document.getElementById('input');
 const todaysForecast = document.getElementById('todaysForecast');
 const searchHistory = document.getElementById('history');
 
-// Function to get weather forecast for today
+// Function to get weather forecast for today by city name
 async function getWeather(city) {
-  let apiKey = '8269b9eae5d821ab324b7e685d141133'; // Replace with your actual API key
+  let apiKey = '8269b9eae5d821ab324b7e685d141133';
   let requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
   try {
